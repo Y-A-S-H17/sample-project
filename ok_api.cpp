@@ -23,7 +23,7 @@ public:
     void handle_get(http_request request) {
         ucout << "Received GET request" << std::endl;
         json::value response;
-        response[U("message")] = json::value::string(U("It is working fine ,I have check  again "));
+        response[U("message")] = json::value::string(U("webhook testing but no output "));
         request.reply(status_codes::OK, response);
     }
 
